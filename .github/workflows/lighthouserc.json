@@ -2,7 +2,10 @@
   "ci": {
     "collect": {
       "settings": {
-        "onlyCategories": ["accessibility"]
+        "onlyAudits": [
+          "duplicate-id",
+          "tabindex"
+        ]
       }
   },
     "assert": {
