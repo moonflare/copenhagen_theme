@@ -4,6 +4,12 @@
       "settings": {
         "configPath": "./.github/workflows/config.js"
       }
-  }
+  },
+    "assert": {
+      "preset": "lighthouse:recommended",
+      "assertions": {
+        "categories:accessibility": ["error", {"minScore": 0.95}]
+      }
+    }
   }
 }
