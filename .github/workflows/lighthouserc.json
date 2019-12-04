@@ -1,8 +1,10 @@
 {
   "ci": {
-    "settings": {
-      "only-categories":"accessibility"
-    },
+    "collect": {
+      "settings": {
+        "only-categories": "accessibility"
+      }
+  },
     "assert": {
       "preset": "lighthouse:recommended",
       "assertions": {
