@@ -1,5 +1,8 @@
 {
   "ci": {
+    "settings": {
+      "only-categories":"accessibility"
+    },
     "assert": {
       "preset": "lighthouse:recommended",
       "assertions": {
