@@ -2,7 +2,7 @@
   "ci": {
     "collect": {
       "settings": {
-        "onlyCategories": "accessibility"
+        "onlyCategories": ["accessibility"]
       }
   },
     "assert": {
