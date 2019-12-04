@@ -2,10 +2,7 @@
   "ci": {
     "collect": {
       "settings": {
-        "onlyAudits": [
-          "duplicate-id",
-          "tabindex"
-        ]
+        "configPath": "./.github/workflows/config.js"
       }
   },
     "assert": {
