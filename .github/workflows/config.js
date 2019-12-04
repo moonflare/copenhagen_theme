@@ -6,6 +6,6 @@ module.exports = {
     settings: {
         // For the purpose of this project, performance should be enough
         // It can always be extended to other categories
-        onlyCategories: ['accessibility']
+        onlyCategories: ['performance']
     }
 };
