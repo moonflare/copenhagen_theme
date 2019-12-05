@@ -1,0 +1,26 @@
+name: Lighthouse
+"on": [push]
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - run: "sudo apt-get install zip"
+      - run: "zip --exclude=*.git* -r theme.zip ."
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.x'
+      - run: gem install faraday
+      - run: gem install faraday_middleware
+      - run: ruby ./.github/workflows/theme_upload.rb
+        env:
+          zendesk_email: ${{ secrets.zendesk_email }}
+          zendesk_password: ${{ secrets.zendesk_password }}
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v2
+        with:
+          urls: |
+            https://z3nasilva-pod18.zendesk.com/hc/en-us
+            https://z3nasilva-pod18.zendesk.com/hc/en-us/articles/360000159820
+          configPath: ./.github/workflows/lighthouserc.json
