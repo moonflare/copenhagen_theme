@@ -2,7 +2,7 @@
   "ci": {
     "assert": {
       "assertions": {
-        "meta-description": ["error", {"minScore": 2}]
+        "categories:accessibility": ["error", {"minScore": 0.95}]
       }
     }
   }
