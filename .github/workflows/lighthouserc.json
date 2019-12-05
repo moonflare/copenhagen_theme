@@ -3,7 +3,7 @@
     "assert": {
       "preset": "lighthouse:recommended",
       "assertions": {
-        "accessibility/duplicate-id": ["error", {"minScore": 0.95}]
+        "meta-description": ["error", {"minScore": 2}]
       }
     }
   }
