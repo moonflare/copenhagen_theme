@@ -1,7 +1,6 @@
 {
   "ci": {
     "assert": {
-      "preset": "lighthouse:recommended",
       "assertions": {
         "meta-description": ["error", {"minScore": 2}]
       }
