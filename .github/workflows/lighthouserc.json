@@ -1,10 +1,5 @@
 {
   "ci": {
-    "collect": {
-      "settings": {
-        "configPath": "./.github/workflows/config.js"
-      }
-  },
     "assert": {
       "preset": "lighthouse:recommended",
       "assertions": {
